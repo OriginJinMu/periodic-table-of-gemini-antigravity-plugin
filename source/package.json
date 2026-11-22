@@ -1,0 +1,103 @@
+{
+  "name": "periodic-table-of-gemini",
+  "displayName": "The Periodic Table of Gemini",
+  "description": "Google Gemini 网页端隐藏彩蛋《The Periodic Table of Gemini》的 Antigravity IDE / VS Code 离线交互式插件：完整 118 个化学元素中英双语科普 + 5 大 Gemini 彩蛋模型快捷切换器。",
+  "version": "1.0.0",
+  "publisher": "originjinmu",
+  "author": {
+    "name": "OriginJinMu & Antigravity"
+  },
+  "license": "MIT",
+  "icon": "media/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OriginJinMu/periodic-table-of-gemini-antigravity-plugin"
+  },
+  "homepage": "https://originjinmu.github.io/periodic-table-of-gemini/",
+  "keywords": [
+    "gemini",
+    "antigravity",
+    "periodic-table",
+    "chemistry",
+    "easter-egg"
+  ],
+  "categories": [
+    "Other",
+    "Education",
+    "Visualization"
+  ],
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "periodicTableOfGemini.open",
+        "title": "Periodic Table of Gemini: Open Interactive Periodic Table",
+        "icon": "$(sparkle)"
+      },
+      {
+        "command": "periodicTableOfGemini.quickPick",
+        "title": "Periodic Table of Gemini: Quick Pick Element / Gemini Model"
+      },
+      {
+        "command": "periodicTableOfGemini.randomFact",
+        "title": "Periodic Table of Gemini: Surprise Me (Random Element Fact)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "periodicTableOfGemini.open",
+        "key": "ctrl+alt+g",
+        "mac": "cmd+alt+g"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "periodic-table-of-gemini",
+          "title": "Periodic Table of Gemini",
+          "icon": "media/activity-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "periodic-table-of-gemini": [
+        {
+          "type": "webview",
+          "id": "periodicTableOfGemini.sidebarView",
+          "name": "118 Elements & Gemini 5"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "The Periodic Table of Gemini",
+      "properties": {
+        "periodicTableOfGemini.defaultLanguage": {
+          "type": "string",
+          "enum": [
+            "bilingual",
+            "zh",
+            "en"
+          ],
+          "enumDescriptions": [
+            "中英双语 (Bilingual EN + 中文)",
+            "仅中文 (Chinese Only)",
+            "EN Only (English Only)"
+          ],
+          "default": "bilingual",
+          "description": "默认展示语言（bilingual / zh / en）。"
+        },
+        "periodicTableOfGemini.showStatusBar": {
+          "type": "boolean",
+          "default": true,
+          "description": "是否在右下角状态栏常驻显示当前固定元素或 Gemini 彩蛋模型入口。"
+        }
+      }
+    }
+  }
+}
