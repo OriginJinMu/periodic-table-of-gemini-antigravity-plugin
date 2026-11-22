@@ -19,4 +19,4 @@
 
 ## 作者
 
-- **OriginJinMu** × **Antigravity**
+- **OriginJinMu** × **Gemini-Neon**

@@ -126,4 +126,4 @@ source/
 | 头像 | 角色 | 名称 | 主页 / 联系 |
 | :---: | :--- | :--- | :--- |
 | <img src="https://github.com/OriginJinMu.png" width="56" height="56" alt="OriginJinMu" /> | **作者 (Author)** | **OriginJinMu** | [@OriginJinMu](https://github.com/OriginJinMu) |
-| <img src="./assets/antigravity-avatar.jpg" width="56" height="56" alt="Antigravity Avatar" /> | **共同创作者 (Co-author)** | **Antigravity** | `antigravity@google.com` |
+| <img src="./assets/gemini-neon-avatar.jpg" width="56" height="56" alt="Gemini-Neon Avatar" /> | **共同创作者 (Co-author)** | **Gemini-Neon** | `antigravity@google.com` |
